@@ -1,3 +1,6 @@
+h1, h2, h3 {
+  color: #2f2f2f; }
+
 .container {
   max-width: 1280px;
   padding: 0 1.5rem;
@@ -36,6 +39,7 @@
     background-color: beige; }
 
 .lead {
+  color: gold;
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 2rem;
@@ -93,7 +97,7 @@ img {
   text-transform: uppercase;
   width: 140px;
   height: 70px;
-  color: orangered;
+  color: gold;
   box-sizing: border-box;
   padding-top: 15px;
   text-align: center; }
@@ -129,6 +133,7 @@ img {
       text-shadow: 1px 1px 0 #2f2f2f, 2px 2px 0 beige; }
 
 #home-a .special-shadow {
+  color: #2f2f2f;
   text-shadow: none; }
 
 #home-a .specials {
@@ -139,3 +144,23 @@ img {
   #home-a .specials .fas {
     color: orangered;
     padding: 0.4rem; }
+  #home-a .specials h3, #home-a .specials p {
+    color: #2f2f2f; }
+
+#home-b .stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  #home-b .stats li {
+    line-height: 2; }
+    #home-b .stats li.stats-title {
+      font-size: 1.5rem; }
+    #home-b .stats li.stats-number {
+      font-weight: 2rem;
+      font-weight: 700; }
+  #home-b .stats div {
+    padding: 3rem 0; }
+    #home-b .stats div:nth-child(odd) {
+      color: beige;
+      background-color: orangered; }
+    #home-b .stats div:nth-child(even) {
+      background-color: gold; }

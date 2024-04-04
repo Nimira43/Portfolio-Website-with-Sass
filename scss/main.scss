@@ -31,7 +31,7 @@ img {
   text-transform: uppercase;
   width: 140px;
   height: 70px;
-  color: $main-colour;
+  color: $medium-colour;
   box-sizing: border-box;
   padding-top: 15px;
   text-align: center;
@@ -83,6 +83,7 @@ img {
 #home {
   &-a {
     .special-shadow {
+      color: $dark-colour;
       text-shadow: none;
     }
     .specials {
@@ -93,6 +94,35 @@ img {
       .fas {
         color: $main-colour;
         padding: 0.4rem
+      }
+      h3, p {
+        color: $dark-colour;
+      } 
+    }
+  }
+  &-b {
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      li {
+        line-height: 2;
+        &.stats-title {
+          font-size: 1.5rem;
+        }
+        &.stats-number {
+          font-weight: 2rem;
+          font-weight: 700;
+        }
+      }
+      div { 
+        padding: 3rem 0;
+        &:nth-child(odd) {
+          color: $beige-colour;
+          background-color: $main-colour;
+        }  
+        &:nth-child(even) {
+          background-color: $medium-colour;
+        }  
       }
     }
   }
