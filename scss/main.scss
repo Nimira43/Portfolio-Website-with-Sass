@@ -1,4 +1,5 @@
 @import 'config';
+@import 'utils';
 
 * {
   margin: 0;
@@ -8,7 +9,7 @@
 body {
   font-family: 'Outfit', sans-serif;
   line-height: 1.6;
-  background: beige;
+  background: $beige-colour;
 }
 
 a {
@@ -22,4 +23,63 @@ ul {
 
 img {
   width: 100%;
+}
+
+#logo {
+  font-family: 'Zeyada', cursive;
+  font-size: 25px;
+  text-shadow: 0.5px 0.5px 0 $dark-colour,
+               1px 1px 6px $main-colour;
+  text-transform: uppercase;
+  width: 140px;
+  height: 70px;
+  color: $beige-colour;
+  box-sizing: border-box;
+  padding-top: 15px;
+  text-align: center;
+} 
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  ul {
+    display: flex;
+  }
+  li {
+    padding: 1rem 1.5rem
+  }
+  a {
+    text-decoration: none;
+    color: $beige-colour;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 2px;
+    transition: border-color 0.5s;
+    &:hover {
+      border-color: $main-colour;
+    }
+  }
+}
+
+#header {
+  &-home {
+    background: $bg-image no-repeat center right / cover;
+    height: 100vh;
+    color: $beige-colour;
+    .header-content {
+      text-align: center;
+      padding-top: 20%;
+      h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+        color: $main-colour;
+        text-shadow: 1px 1px 0 $dark-colour,
+                     2px 2px 0 $beige-colour;
+      }
+    }
+  }
+
+  // &-inner {
+
+  // }
 }
