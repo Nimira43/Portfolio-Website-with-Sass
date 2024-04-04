@@ -1,0 +1,25 @@
+@import 'config';
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.6;
+  background: beige;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-colour;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
