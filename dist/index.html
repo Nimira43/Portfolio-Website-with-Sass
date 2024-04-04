@@ -1,34 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Teko:wght@300..700&family=Zeyada&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../dist/css/main.css">
-  <title>Portfolio Website with Sass</title>
-</head>
-<body>
-  <header id="header-home">
-    <div class="container">
-      <nav id="main-nav">
-        <h2 id="logo">Nimira Tech</h2>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="header-content">
-        <h1>We are Nimira Tech - <span class="txt-type" data-wait="3000" data-words='["Programmers", "Ethical Hackers", "Data Scientists"]'></span></h1>
-        <p class="lead">We specialise in Coding, Cyber Security and Machine Learning</p>
-        <a href="projects.html" class="btn-main">View Projects</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Teko:wght@300..700&family=Zeyada&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../dist/css/main.css" />
+    <title>Portfolio Website with Sass</title>
+  </head>
+  <body>
+    <header id="header-home">
+      <div class="container">
+        <nav id="main-nav">
+          <h2 id="logo">Nimira Tech</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-content">
+          <h1>
+            We are Nimira Tech -
+            <span
+              class="txt-type"
+              data-wait="3000"
+              data-words='["Programmers", "Ethical Hackers", "Data Scientists"]'
+            ></span>
+          </h1>
+          <p class="lead">
+            We specialise in Coding, Cyber Security and Machine Learning
+          </p>
+          <a href="projects.html" class="btn-main">View Projects</a>
+        </div>
       </div>
-    </div>
-  </header>
-  <script src="../dist/js/typewriter.js"></script>
-</body>
+    </header>
+    <section id="home-a" class="text-center py-2">
+      <div class="container">
+        <h2 class="section-title">We Specialise In</h2>
+        <div class="bottom-line"></div>
+        <p class="lead special-shadow">
+          JavaScript Frameworks, Pen-testing and Deep Learning Neutral Networks
+        </p>
+        <div class="specials">
+          <div>
+            <i class="fas fa-code fa-2x"></i>
+            <h3>Coding</h3>
+            <p>
+              Coding is our passion. We specialise in React, Vue and Angular and
+              technologies like Node, Go, Rust, Express, Fastify, Next JS,
+              Django, MongoDB and Firebase, to name but a few.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-terminal fa-2x"></i>
+            <h3>Microservices</h3>
+            <p>
+              We are experts with Docker and Kubernetes to help manage microservices. The technologies we mostly use are Fastify, Koa, Moleculer and Derby JS.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-shield-halved fa-2x"></i>
+            <h3>Ethical Hacking</h3>
+            <p>
+              Our team of pen-testers are ready to help strengthen and enhance your Information Techology systems. We have experience Red and Blue teams that will analysis and diagnose problems with your network.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-database fa-2x"></i>
+            <h3>Data Science</h3>
+            <p>
+              We are developing our strength with regards to Machine Learning, Deep Learning and Artifical Intelligence. We working on our own AI model using various Neural Network Technics.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+
+      
+    </section>
+    <script src="../dist/js/typewriter.js"></script>
+  </body>
 </html>
+
+<!--
+<i class="fa-solid fa-users-gear"></i>
+<i class="fa-solid fa-trophy"></i>
+<i class="fa-solid fa-hourglass-half"></i>
+<i class="fa-solid fa-list-check"></i>
+
+<i class="fa-solid fa-file-code"></i>
+<i class="fa-solid fa-code-compare"></i>
+<i class="fa-solid fa-lock-open"></i>
+<i class="fa-solid fa-bug"></i>
+
+<i class="fa-brands fa-facebook-f"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-x-twitter"></i>
+<i class="fa-brands fa-linkedin"></i>
+<i class="fa-brands fa-youtube"></i>
+<i class="fa-brands fa-discord"></i>
+<i class="fa-brands fa-twitch"></i>
+<i class="fa-brands fa-github"></i> -->

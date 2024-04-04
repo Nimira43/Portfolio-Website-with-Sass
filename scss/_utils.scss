@@ -21,26 +21,40 @@
     @extend %btn-shared;
     color: $beige-colour;
     background-color: $main-colour;
+    &:hover {
+      color: $main-colour;
+      background-color: $beige-colour;  
+    }
   }
   
   &-light {
     @extend %btn-shared;
     color: $main-colour;
     background-color: $beige-colour;
+    &:hover {
+      color: $beige-colour;
+      background-color: $main-colour;
+    }
   }
 
   &-dark {
     @extend %btn-shared;
-    color: $main-colour;
+    color: $beige-colour;
     background-color: $dark-colour;
+    &:hover {
+      color: $dark-colour;
+      background-color: $beige-colour;
+    }
   }
 }
 
-button[class^='btn-']:hover,
-a[class^='btn-']:hover,
-input[class^='btn-']:hover {
-  opacity: 0.8;
-}
+// To be deleted after next commit
+
+// button[class^='btn-']:hover,
+// a[class^='btn-']:hover,
+// input[class^='btn-']:hover {
+//   opacity: 0.8;
+// }
 
 .lead {
   font-size: 1.5rem;
@@ -52,4 +66,34 @@ input[class^='btn-']:hover {
 
 .text-center {
   text-align: center;
+}
+
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
 }
