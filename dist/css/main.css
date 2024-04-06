@@ -275,6 +275,22 @@ img {
   color: orangered;
   margin: 1rem; }
 
+#about-b h4 {
+  font-weight: 300;
+  text-transform: uppercase; }
+
+#about-b .progress {
+  overflow: hidden;
+  height: 20px;
+  background: gold;
+  border-radius: 5px;
+  margin-bottom: 0.6rem; }
+  #about-b .progress div {
+    height: 100%;
+    color: beige;
+    text-align: center;
+    background: orangered; }
+
 #main-footer {
   background: #111;
   color: beige;
