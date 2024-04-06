@@ -1,7 +1,3 @@
-h1, h2, h3 {
-  color: $dark-colour;
-}
-
 .container {
   max-width: $website-width;
   padding: 0 1.5rem;
@@ -53,13 +49,23 @@ h1, h2, h3 {
 }
 
 .lead {
-  color: $medium-colour;
+  
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 2rem;
+  
+}
+
+.lead-1 {
+  color: $medium-colour;
   text-shadow: 0.5px 0.5px 0 $dark-colour,
                1.5px 1.5px 0 $main-colour;
 }
+
+.lead-2 {
+  color: $dark-colour;
+}
+
 
 .text-center {
   text-align: center;
