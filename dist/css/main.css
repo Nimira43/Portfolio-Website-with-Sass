@@ -221,3 +221,21 @@ img {
       #home-c .process-icon:hover .process-step {
         background: #111;
         color: gold; }
+
+#main-footer {
+  background: #111;
+  color: beige;
+  height: 5rem; }
+  #main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center; }
+    #main-footer .footer-content .social .fab {
+      margin-right: 1rem;
+      border-radius: 50%;
+      text-align: center;
+      padding: 0.5rem;
+      transition: color 1s; }
+      #main-footer .footer-content .social .fab:hover {
+        color: orangered; }

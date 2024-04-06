@@ -150,7 +150,7 @@ img {
       &-icon {
         border-radius: 50%;
         background-color: $black-colour;
-        color: $main-colour;
+        color: ($main-colour);
         padding: 2rem;
         width: 70px;
         height: 70px;
@@ -173,3 +173,26 @@ img {
     }    
   }
 }
+
+#main-footer {
+  background: $black-colour;
+  color: $beige-colour;
+  height: 5rem;
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+    .social .fab {
+      margin-right: 1rem;
+      border-radius: 50%;
+      text-align: center;
+      padding: 0.5rem;
+      transition: color 1s;
+      &:hover {
+        color: $main-colour;
+      }
+    }
+  }
+}
+

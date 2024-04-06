@@ -6,3 +6,14 @@ $dark-colour: #2f2f2f;
 $black-colour: #111;
 $medium-colour: gold;
 $bg-image: url('../images/main.jpg');
+
+
+// Not used
+
+// @function set-Text-color($color) {
+//   @if(lightness($color) > 50) {
+//     @return #333;
+//   } @else {
+//     @return #fff;
+//   }
+// }
