@@ -126,4 +126,50 @@ img {
       }
     }
   }
+  &-c {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1.5rem;
+      text-align: center;
+      &-step {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 15px;
+        font-weight: 900;
+        background: $medium-colour;
+        color: $black-colour;
+        border-radius: 50%;
+        height: 8px;
+        width: 8px;
+        line-height: 8px;
+        padding: 1rem;
+        transition: all 1s;
+      }
+      &-icon {
+        border-radius: 50%;
+        background-color: $black-colour;
+        color: $main-colour;
+        padding: 2rem;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        position: relative;
+        transition: all 1s;
+        &:hover {
+          background: $main-colour;
+          color: $black-colour;
+          width: 90px;
+          height: 90px;
+          line-height: 90px;
+          .process-step {
+            background: $black-colour;
+            color: $medium-colour;
+          }
+        }
+      }
+    }    
+  }
 }
