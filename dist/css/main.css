@@ -35,6 +35,22 @@
     color: #2f2f2f;
     background-color: beige; }
 
+.bg-main {
+  background: orangered;
+  color: beige; }
+
+.bg-dark {
+  background: #111;
+  color: beige; }
+
+.bg-light {
+  background: beige;
+  color: #2f2f2f; }
+
+.bg-medium {
+  background: gold;
+  color: #111; }
+
 .lead {
   font-size: 1.5rem;
   font-weight: 200;
@@ -149,6 +165,10 @@ img {
       color: orangered;
       text-shadow: 1px 1px 0 #2f2f2f, 2px 2px 0 beige; }
 
+#header-inner {
+  background: url("../images/header.jpg") no-repeat center bottom/cover;
+  height: 5.5rem; }
+
 #home-a .special-shadow {
   color: #2f2f2f;
   text-shadow: none; }
@@ -221,6 +241,39 @@ img {
       #home-c .process-icon:hover .process-step {
         background: #111;
         color: gold; }
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
+  grid-gap: 1.2rem; }
+
+#about-a .bio-image {
+  grid-area: bioimage; }
+
+#about-a .bio {
+  grid-area: bio;
+  border-left: 3px solid orangered;
+  padding: 0.8rem; }
+  #about-a .bio h2 {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  #about-a .bio p {
+    font-size: 20px; }
+
+#about-a .award-1 {
+  grid-area: aw1; }
+
+#about-a .award-2 {
+  grid-area: aw2; }
+
+#about-a .award-3 {
+  grid-area: aw3; }
+
+#about-a .award-1 .fas,
+#about-a .award-2 .fas,
+#about-a .award-3 .fas {
+  color: orangered;
+  margin: 1rem; }
 
 #main-footer {
   background: #111;

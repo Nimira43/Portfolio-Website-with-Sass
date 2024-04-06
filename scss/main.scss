@@ -76,8 +76,10 @@ img {
       }
     }
   }
-  // &-inner {
-  // }
+  &-inner {
+    background: $header-image no-repeat center bottom / cover;
+    height: 5.5rem;
+  }
 }
 
 #home {
@@ -171,6 +173,48 @@ img {
         }
       }
     }    
+  }
+}
+
+#about {
+  &-a {
+    .about-info {
+      display: grid;
+      grid-template-areas:
+        'bioimage bio bio'
+        'aw1 aw2 aw3';
+        grid-gap: 1.2rem;
+    }
+    .bio-image {
+      grid-area: bioimage;
+    }
+    .bio {
+      grid-area: bio;
+      border-left: 3px solid $main-colour;
+      padding: 0.8rem;
+      h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+    .award-1 {
+      grid-area: aw1;
+    }
+    .award-2 {
+      grid-area: aw2;
+    }
+    .award-3 {
+      grid-area: aw3;
+    }
+    .award-1 .fas,
+    .award-2 .fas,
+    .award-3 .fas {
+      color: $main-colour;
+      margin: 1rem;
+    }
   }
 }
 

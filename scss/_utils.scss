@@ -48,8 +48,26 @@
   }
 }
 
-.lead {
-  
+.bg {
+  &-main {
+    background: $main-colour;
+    color: $beige-colour;
+  }
+  &-dark {
+    background: $black-colour;
+    color: $beige-colour;
+  }
+  &-light {
+    background: $beige-colour;
+    color: $dark-colour;
+  }
+  &-medium {
+    background: $medium-colour;
+    color: $black-colour;
+  }
+}
+
+.lead { 
   font-size: 1.5rem;
   font-weight: 200;
   margin-bottom: 2rem; 
