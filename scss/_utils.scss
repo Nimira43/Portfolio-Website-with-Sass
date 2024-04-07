@@ -39,11 +39,11 @@
 
   &-dark {
     @extend %btn-shared;
-    color: $beige-colour;
-    background-color: $dark-colour;
+    color: $main-colour;
+    background-color: $black-colour;
     &:hover {
-      color: $dark-colour;
-      background-color: $beige-colour;
+      color: $black-colour;
+      background-color: $main-colour;
     }
   }
 }
